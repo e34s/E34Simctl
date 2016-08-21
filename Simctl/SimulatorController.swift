@@ -8,6 +8,7 @@
 
 
 import BrightFutures
+import Alamofire
 
 extension FBSimulatorPool {
     func simulatorWithProcessIdentifier(processIdentifier: pid_t) -> FBSimulator? {
@@ -19,7 +20,6 @@ extension FBSimulatorPool {
 class SimulatorController {
     
     static let sharedInstance = SimulatorController()
-    
     let control: FBSimulatorControl?
     var ports = [String:String]()
     init() {
@@ -43,15 +43,16 @@ class SimulatorController {
         }
     }
     
-    func launchWebDriverAgent(sim: String) {
-        ports[sim] = String(NSNumber.randomNumber(15000, max: 30000))
+    func launchWebDriverAgent(simulatorUdid: String) {
+        let port =  String(NSNumber.randomNumber(15000, max: 30000))
+        ports[simulatorUdid] = port
         
-        print("*****Starting WebDriverAgent on port \(ports[sim]!)")
+        print("*****Starting WebDriverAgent on port \(port)")
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
             let task = NSTask()
             task.launchPath = "fbsimctl"
-            task.arguments = [sim, "launch_xctest", "--test-timeout", "900.0", "/Users/silvia/Library/Developer/Xcode/DerivedData/build/Products/Debug-iphonesimulator/WebDriverAgentRunner-Runner.app/PlugIns/WebDriverAgentRunner.xctest", "com.apple.mobilesafari", "--port" , self.ports[sim]!, "--listen"]
+            task.arguments = [simulatorUdid, "launch_xctest", "--test-timeout", "900.0", "/Users/silvia/Library/Developer/Xcode/DerivedData/build/Products/Debug-iphonesimulator/WebDriverAgentRunner-Runner.app/PlugIns/WebDriverAgentRunner.xctest", "com.apple.mobilesafari", "--port" , port, "--listen"]
             task.launch() //never going to finish
         }
     }
@@ -74,7 +75,7 @@ class SimulatorController {
         let promise = Promise<JSON, NSError>()
         retry(10, task: { self.pokeWebAgent(simulatorUdid) },
               success: { data in
-               promise.success(data)
+                promise.success(data)
             },
               failure: { err in
                 promise.failure(err)
@@ -89,36 +90,28 @@ class SimulatorController {
             let host = "http://localhost:\(self.ports[simulatorUdid]!)"
             let sessionUrl = "\(host)/session"
             let inspectorUrl = "\(host)/inspector"
-
-            let request = NSMutableURLRequest(URL: NSURL(string: sessionUrl)!)
-            request.HTTPMethod = "POST"
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            let postString = "{\"desiredCapabilities\":{\"bundleId\":\"com.example.apple-samplecode.TableSearch\", \"app\":\"/Users/silvia/Development/workspace/e34/TableSearch.app\"}}"
-            request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-            NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: { data, response, error in
-                guard error == nil && data != nil else {
-                    failure(error!)
-                    return
-                }
-                
-                if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
-                    failure(NSError(domain: "Simctl", code: httpStatus.statusCode, userInfo: [NSLocalizedDescriptionKey : "Received weird status"]))
-                }
-                do {
-                    var object = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions()) as! [String:AnyObject]
-                    object["inspectorUrl"] = inspectorUrl
-                    object["webdriverUrl"] = "\(sessionUrl)/\(object["sessionId"]!)"
-                    
-                    let response = try JSON.encode(object)
-                    success(response)
-                } catch {
-                    failure(NSError(domain: "Simctl", code: 3, userInfo: [NSLocalizedDescriptionKey : "Error parsing json"]))
-                }
-                
-            }).resume()
+            let appPath = "/Users/silvia/Development/workspace/e34/TableSearch.app"
+            let parameters = [
+                "desiredCapabilities": [
+                    "bundleId": "com.example.apple-samplecode.TableSearch",
+                    "app": appPath
+                ]
+            ]
+            Alamofire.request(.POST, sessionUrl, parameters: parameters, encoding:.JSON)
+                .validate()
+                .responseJSON { (response) -> Void in
+                    guard response.result.isSuccess, var value = response.result.value as? [String: AnyObject] else {
+                        failure(NSError(domain: "Simctl", code: 500, userInfo: [NSLocalizedDescriptionKey : "Couldn't contact WebDriverAgent"]))
+                        return
+                    }
+                    value["inspectorUrl"] = inspectorUrl
+                    value["webdriverUrl"] = "\(sessionUrl)/\(value["sessionId"]!)"
+                    let response = try? JSON.encode(value)
+                    success(response!)
+            }
         }
     }
-
+    
     func killSimulator(processIdentifier: pid_t) throws {
         if let simulator = self.control?.pool.simulatorWithProcessIdentifier(processIdentifier) {
             try self.control?.pool.freeSimulator(simulator)
@@ -128,7 +121,7 @@ class SimulatorController {
     func killAllSimulators() throws {
         try self.control?.set.killAll()
     }
-
+    
 }
 
 extension NSNumber {

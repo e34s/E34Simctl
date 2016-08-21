@@ -13,6 +13,8 @@
 		35284DE21D6918AB00860F38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35284DD71D6914B600860F38 /* AppDelegate.m */; };
 		35284DE41D69AB3500860F38 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35284DE31D69AB3500860F38 /* JSON.swift */; };
 		35792E0B1D68E40A00081E18 /* SimulatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35792E0A1D68E40A00081E18 /* SimulatorController.swift */; };
+		35BB91C71D6A2018002D013A /* TableSearch.app in Resources */ = {isa = PBXBuildFile; fileRef = 35BB91C61D6A2018002D013A /* TableSearch.app */; };
+		35BB91CB1D6A243E002D013A /* fbsimctl in Resources */ = {isa = PBXBuildFile; fileRef = 35BB91CA1D6A243E002D013A /* fbsimctl */; };
 		35D48AF01D68755400C55011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D48AEF1D68755400C55011 /* Assets.xcassets */; };
 		35D48AFB1D68760200C55011 /* FBSimulatorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D48AFA1D68760200C55011 /* FBSimulatorControl.framework */; };
 		35D48B0F1D6876DD00C55011 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D48B091D6876DD00C55011 /* WebServer.swift */; };
@@ -27,6 +29,8 @@
 		35284DDA1D6914CD00860F38 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35284DE31D69AB3500860F38 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		35792E0A1D68E40A00081E18 /* SimulatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorController.swift; sourceTree = "<group>"; };
+		35BB91C61D6A2018002D013A /* TableSearch.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = TableSearch.app; sourceTree = "<group>"; };
+		35BB91CA1D6A243E002D013A /* fbsimctl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = fbsimctl; sourceTree = "<group>"; };
 		35D48AE81D68755400C55011 /* Simctl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simctl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D48AEF1D68755400C55011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D48AF41D68755400C55011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,15 +61,25 @@
 		1174D25E1B6DD3D35729234B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35D48AFA1D68760200C55011 /* FBSimulatorControl.framework */,
 				D6A10E57FEE9EADC74BA3B4D /* Pods_Simctl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		35BB91C51D6A2005002D013A /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				35BB91C61D6A2018002D013A /* TableSearch.app */,
+			);
+			name = TestApp;
+			sourceTree = "<group>";
+		};
 		35D48ADF1D68755400C55011 = {
 			isa = PBXGroup;
 			children = (
-				35D48AFA1D68760200C55011 /* FBSimulatorControl.framework */,
+				35BB91CA1D6A243E002D013A /* fbsimctl */,
+				35BB91C51D6A2005002D013A /* TestApp */,
 				35D48AEA1D68755400C55011 /* Simctl */,
 				35D48AE91D68755400C55011 /* Products */,
 				BA3F15AF0F85DF85701604D2 /* Pods */,
@@ -178,6 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35BB91CB1D6A243E002D013A /* fbsimctl in Resources */,
+				35BB91C71D6A2018002D013A /* TableSearch.app in Resources */,
 				35D48AF01D68755400C55011 /* Assets.xcassets in Resources */,
 				35284DDB1D6914CD00860F38 /* main.m in Resources */,
 			);
