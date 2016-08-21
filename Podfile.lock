@@ -1,0 +1,20 @@
+PODS:
+  - BrightFutures (4.1.0):
+    - Result (~> 2.0)
+  - GCDWebServer (3.3.2):
+    - GCDWebServer/Core (= 3.3.2)
+  - GCDWebServer/Core (3.3.2)
+  - Result (2.1.2)
+
+DEPENDENCIES:
+  - BrightFutures
+  - GCDWebServer (~> 3.0)
+
+SPEC CHECKSUMS:
+  BrightFutures: e18b83fd6fa8562ceb9902ee609f0de23b0ee110
+  GCDWebServer: 2a375ec42839a41d7187d04e5b688d32fa5c4cd5
+  Result: 6e722d4a66b1408680dbfcdf51c0b1c4b706316a
+
+PODFILE CHECKSUM: 2124946bd00f1c3d259db23d25c98336f1ecb827
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,1048 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C1D4F2B49242121D01C05655377D07 /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA625AFAEB32E55216B89202CF53B838 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06CE205FB95B45D7ED260AFD00AC79DD /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD7D3424CEAE1A886D6D356ED69B8D7 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09ECD41EED1BC892EE6FEFCEDB5E8947 /* BrightFutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38936F0293CDDE3A1194462C953E9851 /* BrightFutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FB26C90146FEFF44BA116B1E35E09F4 /* Result-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E441A7CAC9D8F4C53B1E1A22942FC298 /* Result-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148896773789885B81DC6D643E560053 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B533440C75943990538F32B77B06A0C /* Cocoa.framework */; };
+		15660F7531C71B00780160E7BC3A75EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B533440C75943990538F32B77B06A0C /* Cocoa.framework */; };
+		1B72926422971A05A1038FEF1F10DA23 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03936C18469F974EB36B7F1F72B6BF2B /* GCDWebServerFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1BF86805992CFF0188743FC58574A612 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3611696419413437CF0229593BD4FB /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DBE01B20E03413F5811A7E58EB649BD /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C79358E0A6ED493C8D67D1FEF5E8F404 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23CC8C8F78A473355FFF1A3CBD017864 /* Result+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8450BF24B42699DB5E082E3E148570 /* Result+BrightFutures.swift */; };
+		2659AF88A6232000AB5213D46D90BF57 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DD184E7E54064D3BCFB92B63D878E /* GCDWebServer-dummy.m */; };
+		2FD4F69F155869816E3568D2C0A328CD /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A707BC3ADFF64D75A8C577D956F0B364 /* GCDWebServerDataResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		34FDA8A310469061BC207ED84D065BBC /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E69FE9368F4C59AA6DE61A9539137A /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1780833527F5CAD846203B80B2190C /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A0F8A5F4EA16664406228F835F4F7B /* Result-dummy.m */; };
+		3E3645D4D611E9A212D9A21952F550EB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95903EAC04BC503EB22B7EF8772D506E /* Errors.swift */; };
+		44D5C1A62CB2C6B4C3BC022D80F843D1 /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8EA8A51C5F9DD8DD62AFD9E3D78DBB /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4718BD505162FA674C844F282A692E90 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F2C83F2D0BD2079424D75C33B81FD /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		471A38FC9AF9649E31CDC0341A7AF8B0 /* AsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715BC8AAF1B7B4BF727ECA506374188D /* AsyncType+ResultType.swift */; };
+		5183D0C1CC83750A1ADE57A638E7F456 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968C79A6E43A915285EEBEE22473561D /* SystemConfiguration.framework */; };
+		59B57964B1FD13F37637947C46E77EA0 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F26A28BAD35AEC153117E58D838A7 /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5F5938C6438438D40DB044F697835A4E /* InvalidationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAFC7C578515B5BC67058B3BE6D636 /* InvalidationToken.swift */; };
+		5FAE6F4952486D7B0087309AA2F25DB0 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0788BB22ED61EB02A6C3A0A6379B55 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		617E0A611B03C36C1DDFE620C0BAE39D /* BrightFutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32C3780EEBB1921739A76AE94C85FA /* BrightFutures-dummy.m */; };
+		6365EB94D63E3B73EC7FC13FFC2FC877 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B532100E9FE15C91AA2A034C095618 /* Future.swift */; };
+		64EFFC6E05B9CACD03418CEF01429883 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E7DE43FD3B48C5BB38E6E10FD2D73 /* GCDWebServerFunctions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		661C5DD01E4441673B992342E098D47C /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80350199515E9A6008917D0FEE154A /* Promise.swift */; };
+		68B64C52F85E1A0B8AC5410FDDE03D07 /* AsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1B9B96AF4248E90A6A8DAC771A628 /* AsyncType.swift */; };
+		6B25647E430E216994070188D9E2CFF8 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 91842E09696A216FDD1F778179C22DAD /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D2CA7708E200C89F0DAD24F88680D46 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE8F17DA1EA2BCF7E819B147096377B /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D6126E1D60EBA2006FF3171E793E305 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800EAF32A5E6E64B4B0819BCAC447CB5 /* Result.framework */; };
+		730E690DE06045EA2BEEB4E1E2AEC351 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B533440C75943990538F32B77B06A0C /* Cocoa.framework */; };
+		743CC8268943E23DB0EADC8614FEE9BA /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BB1257273C062CDF545445A9D32F69 /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		749BEB3F21EAFA6D78F5631312D2C7E6 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF1595A01F9DF1905DCDFF7F6E9E361 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		786354D184BE923C5D0B7E15DA4BB650 /* Pods-Simctl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1205767F3062E1CB7FD434153D7AAD0 /* Pods-Simctl-dummy.m */; };
+		7D747500B9BEC95D4FA0FEA5BFA6D4D4 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E63DCA26C562543E7CBA2D48AE53E27B /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8071ECD543975CC1517AAC58B260D53F /* MutableAsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744C88A68046A02914C80C6FE81607A /* MutableAsyncType+ResultType.swift */; };
+		80F843BA9002D7ACB25D605A5F5A5655 /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628ADC4ED9ECFC12ABC86ECF3CC2EFE /* Semaphore.swift */; };
+		8316EC11EB8EF857FC8AC924FF540076 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B3690F8E310BB3DCB5AEE5BF29203 /* GCDWebServerErrorResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		887256D19D5281690483F032CFC2114E /* Pods-Simctl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0CCE3C4802D85394718C5881A22E3B /* Pods-Simctl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A400F495FB328F47971CEFD020BE9CB /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 336C34AEED7C74E906462EC3C48CF8B2 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		915DF46D37580E8FF98F3BF0E2A8C7A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B533440C75943990538F32B77B06A0C /* Cocoa.framework */; };
+		936C4E5402529DF91047CB9B84C5C281 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 257977CCD7A377286ACCAEB7AEB9C935 /* GCDWebServerURLEncodedFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		946AF936A5472D7D7EF243D3399A2D44 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C5619B6AD211D3518918DFD03D067C73 /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		976C070668BB589ABDB7498633967223 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E19E8EC19F83C540C4A209F0421F4C37 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		97A014155DCD78356F0E7E62B7A179E8 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB996F83D8DA2BE049E6829021C00C /* Async.swift */; };
+		A7AF534B31209659ED4C123BC4D32A31 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2539DDAF179ABD5C0D5482124FD8699C /* GCDWebServerFileRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AA5A24F29D4D8831ED55AB74A2F17A71 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9724EC6585F52B1FE4C7DCD852A1E0 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE29103F95967AFEAFAAD5CB8D5F1CC /* NSOperationQueue+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999A68A35EFCE29F7CE6D6405765C1E /* NSOperationQueue+BrightFutures.swift */; };
+		AF092F81C6F44FA8F065CF43D112A741 /* MutableAsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B914166196C4E7A66AB1B4AF409FB97 /* MutableAsyncType.swift */; };
+		AFC0F5A350E42EDD292F2B499C13FBFD /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033015A305B07F333332EA327CF8905 /* GCDWebServerMultiPartFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B117FB3C5DADAA39C6FE0B2E2E0FD8F8 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C6C7D1E3C155A4E9BD607CE515D08 /* GCDWebServerDataRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B945A34C95CBC41678D0B37EE95493B7 /* ExecutionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B7154A82D0EC48E36BA26F1BD2E7E /* ExecutionContext.swift */; };
+		C40F70E70A1D2FAEBFEFE14958C47FBE /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B62C31D68A82ECB446C9EB0DE9C904E9 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2EB767179E57B557901172CF4984C24 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FCB086AB81D9680D67F4CC98BF25 /* ResultType.swift */; };
+		DE37CE3D218BBE39543E834E7BFA857C /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6FB18EA2FDA656F62865992BE8B875 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E144557C782A57E2EC23FD35FB52121C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C5C3186E718E53FE879054D0A40E /* Result.swift */; };
+		E200ED03F550223C9F6FFC17ED1EEC57 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B79561C859683BF909518465CBA408 /* Queue.swift */; };
+		E8E4C5EBCD831C8E5D0D0CA305F08CC8 /* SequenceType+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825220DB9A6E0E8BFF93CB522BC9425 /* SequenceType+BrightFutures.swift */; };
+		F06A7AC16F49B8271D54543DB8F29199 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE6F89ACFE6B1E04CC32D286EF89D1 /* GCDWebServer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B71FB608C77A5E63BAF54F546F4AC2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB45C0AF8651B0CC72E303D3F242439;
+			remoteInfo = Result;
+		};
+		4406136E37B90F3A12CDD4DEB8FA3DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB17359068A26BB1EF61653A3E7C9A3;
+			remoteInfo = BrightFutures;
+		};
+		4D69E9A2BF4D03EC1A81C9C8688E7D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB45C0AF8651B0CC72E303D3F242439;
+			remoteInfo = Result;
+		};
+		B087D6091F43AB948ED37FC00DA877B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DADB076AFECDBAADF5E2B19FB72188A;
+			remoteInfo = GCDWebServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0033015A305B07F333332EA327CF8905 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		03936C18469F974EB36B7F1F72B6BF2B /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		155A8F69C3704B8A6F14861A79655EA8 /* Pods-Simctl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simctl.debug.xcconfig"; sourceTree = "<group>"; };
+		19B532100E9FE15C91AA2A034C095618 /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = BrightFutures/Future.swift; sourceTree = "<group>"; };
+		1E80350199515E9A6008917D0FEE154A /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = BrightFutures/Promise.swift; sourceTree = "<group>"; };
+		20DC436BD7F66B61F3ED3B695F8ACB94 /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
+		24F5C53D93ECF5F8CD4A748B99B7DF22 /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
+		2539DDAF179ABD5C0D5482124FD8699C /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		257977CCD7A377286ACCAEB7AEB9C935 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		2744C88A68046A02914C80C6FE81607A /* MutableAsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutableAsyncType+ResultType.swift"; path = "BrightFutures/MutableAsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		296B3690F8E310BB3DCB5AEE5BF29203 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		2C0CCE3C4802D85394718C5881A22E3B /* Pods-Simctl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simctl-umbrella.h"; sourceTree = "<group>"; };
+		2D4C6C7D1E3C155A4E9BD607CE515D08 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		336C34AEED7C74E906462EC3C48CF8B2 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		33DEC8C2C2E99C800B840931FE9F1E20 /* Pods-Simctl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Simctl.modulemap"; sourceTree = "<group>"; };
+		3636A4DACC4C29CAAD9D499A74375512 /* Pods-Simctl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simctl-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36E53F77887EFD7EC2DCC01E3E7CB4B9 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Result.modulemap; sourceTree = "<group>"; };
+		377FBB44716D2BBBED0E9020DF8CC25A /* GCDWebServer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.xcconfig; sourceTree = "<group>"; };
+		38936F0293CDDE3A1194462C953E9851 /* BrightFutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-umbrella.h"; sourceTree = "<group>"; };
+		3A9D478D83189EE7B62C326B7713454D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B533440C75943990538F32B77B06A0C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		3D1F83ED5E0D14251D8698E48914E2D8 /* Pods-Simctl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simctl-resources.sh"; sourceTree = "<group>"; };
+		3F0788BB22ED61EB02A6C3A0A6379B55 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
+		408E56A17619FC4A9B11BC28230AD8EC /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		433776FD202EACE17385EFC8CFEFDBFF /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
+		4B2DD184E7E54064D3BCFB92B63D878E /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
+		4B914166196C4E7A66AB1B4AF409FB97 /* MutableAsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableAsyncType.swift; path = BrightFutures/MutableAsyncType.swift; sourceTree = "<group>"; };
+		52D3FCB086AB81D9680D67F4CC98BF25 /* ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultType.swift; path = Result/ResultType.swift; sourceTree = "<group>"; };
+		648BBDA4228D83CA0A43B128B6849DD7 /* Pods-Simctl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simctl-frameworks.sh"; sourceTree = "<group>"; };
+		676925B355257DABB05AD6AFDB97CCBF /* BrightFutures.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrightFutures.xcconfig; sourceTree = "<group>"; };
+		6CCB996F83D8DA2BE049E6829021C00C /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = BrightFutures/Async.swift; sourceTree = "<group>"; };
+		6F8F2C83F2D0BD2079424D75C33B81FD /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		715BC8AAF1B7B4BF727ECA506374188D /* AsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+ResultType.swift"; path = "BrightFutures/AsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		71B79561C859683BF909518465CBA408 /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = BrightFutures/Queue.swift; sourceTree = "<group>"; };
+		74E1B9B96AF4248E90A6A8DAC771A628 /* AsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncType.swift; path = BrightFutures/AsyncType.swift; sourceTree = "<group>"; };
+		75C428FE3F54039A70E6E9396E037005 /* Pods_Simctl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simctl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7628ADC4ED9ECFC12ABC86ECF3CC2EFE /* Semaphore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Semaphore.swift; path = BrightFutures/Semaphore.swift; sourceTree = "<group>"; };
+		78F8A3B244D009B464011E42493C6E9C /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3E7DE43FD3B48C5BB38E6E10FD2D73 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		7A9724EC6585F52B1FE4C7DCD852A1E0 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		7C412609DAE6126917B43896E7E8BFD4 /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
+		800EAF32A5E6E64B4B0819BCAC447CB5 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8521CE792EF9DDD5F59E81F299AF3627 /* BrightFutures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BrightFutures.modulemap; sourceTree = "<group>"; };
+		88E69FE9368F4C59AA6DE61A9539137A /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		8E8EA8A51C5F9DD8DD62AFD9E3D78DBB /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
+		8FE8F17DA1EA2BCF7E819B147096377B /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		91842E09696A216FDD1F778179C22DAD /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95903EAC04BC503EB22B7EF8772D506E /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = BrightFutures/Errors.swift; sourceTree = "<group>"; };
+		968C79A6E43A915285EEBEE22473561D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		9999A68A35EFCE29F7CE6D6405765C1E /* NSOperationQueue+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOperationQueue+BrightFutures.swift"; path = "BrightFutures/NSOperationQueue+BrightFutures.swift"; sourceTree = "<group>"; };
+		9AA6C5C3186E718E53FE879054D0A40E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
+		9B6F26A28BAD35AEC153117E58D838A7 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
+		9D0A0FBE5D727C6FF15A5A32848F50CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0A0F8A5F4EA16664406228F835F4F7B /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
+		A1205767F3062E1CB7FD434153D7AAD0 /* Pods-Simctl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simctl-dummy.m"; sourceTree = "<group>"; };
+		A4DAFC7C578515B5BC67058B3BE6D636 /* InvalidationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvalidationToken.swift; path = BrightFutures/InvalidationToken.swift; sourceTree = "<group>"; };
+		A707BC3ADFF64D75A8C577D956F0B364 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		A825220DB9A6E0E8BFF93CB522BC9425 /* SequenceType+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SequenceType+BrightFutures.swift"; path = "BrightFutures/SequenceType+BrightFutures.swift"; sourceTree = "<group>"; };
+		AB3611696419413437CF0229593BD4FB /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
+		B24FC570578BAC044D9792256BFA1C73 /* Pods-Simctl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simctl-acknowledgements.plist"; sourceTree = "<group>"; };
+		B62C31D68A82ECB446C9EB0DE9C904E9 /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
+		BAF1595A01F9DF1905DCDFF7F6E9E361 /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		C00BB534FD0CCD99BD26C1ACF87E38BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19B7154A82D0EC48E36BA26F1BD2E7E /* ExecutionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExecutionContext.swift; path = BrightFutures/ExecutionContext.swift; sourceTree = "<group>"; };
+		C3652EA5F4E656C75098E40D318CEC6B /* BrightFutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-prefix.pch"; sourceTree = "<group>"; };
+		C5619B6AD211D3518918DFD03D067C73 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		C79358E0A6ED493C8D67D1FEF5E8F404 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		C8611B3921BD1884A34CA2C2FB7B170E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9BB1257273C062CDF545445A9D32F69 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		CA8450BF24B42699DB5E082E3E148570 /* Result+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+BrightFutures.swift"; path = "BrightFutures/Result+BrightFutures.swift"; sourceTree = "<group>"; };
+		E19E8EC19F83C540C4A209F0421F4C37 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		E441A7CAC9D8F4C53B1E1A22942FC298 /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
+		E63DCA26C562543E7CBA2D48AE53E27B /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		EA625AFAEB32E55216B89202CF53B838 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		EF32C3780EEBB1921739A76AE94C85FA /* BrightFutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrightFutures-dummy.m"; sourceTree = "<group>"; };
+		F7BB409ED049D789126EAEDDB51F853B /* Pods-Simctl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simctl.release.xcconfig"; sourceTree = "<group>"; };
+		FA6FB18EA2FDA656F62865992BE8B875 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		FDA3F6B094202313FA04A7EC71D62A67 /* BrightFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrightFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCE6F89ACFE6B1E04CC32D286EF89D1 /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
+		FDD7D3424CEAE1A886D6D356ED69B8D7 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77A24008BA4EDBB3B370C67666ED5F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148896773789885B81DC6D643E560053 /* Cocoa.framework in Frameworks */,
+				6D6126E1D60EBA2006FF3171E793E305 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D9DEF5766731BD8292327233B909188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915DF46D37580E8FF98F3BF0E2A8C7A2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B614B36AC1D690BDF5700B38F009E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730E690DE06045EA2BEEB4E1E2AEC351 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B301BDF47623A07531A7025565B54DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15660F7531C71B00780160E7BC3A75EF /* Cocoa.framework in Frameworks */,
+				5183D0C1CC83750A1ADE57A638E7F456 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CDA4D350C24E4D41D58C2B701393C43 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A47AB3F35A376883B41E95E605F1369 /* Pods-Simctl */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		217C4DFC14A0A7EE5FEFD89A38C30F61 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				3B533440C75943990538F32B77B06A0C /* Cocoa.framework */,
+				968C79A6E43A915285EEBEE22473561D /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		4A47AB3F35A376883B41E95E605F1369 /* Pods-Simctl */ = {
+			isa = PBXGroup;
+			children = (
+				3A9D478D83189EE7B62C326B7713454D /* Info.plist */,
+				33DEC8C2C2E99C800B840931FE9F1E20 /* Pods-Simctl.modulemap */,
+				3636A4DACC4C29CAAD9D499A74375512 /* Pods-Simctl-acknowledgements.markdown */,
+				B24FC570578BAC044D9792256BFA1C73 /* Pods-Simctl-acknowledgements.plist */,
+				A1205767F3062E1CB7FD434153D7AAD0 /* Pods-Simctl-dummy.m */,
+				648BBDA4228D83CA0A43B128B6849DD7 /* Pods-Simctl-frameworks.sh */,
+				3D1F83ED5E0D14251D8698E48914E2D8 /* Pods-Simctl-resources.sh */,
+				2C0CCE3C4802D85394718C5881A22E3B /* Pods-Simctl-umbrella.h */,
+				155A8F69C3704B8A6F14861A79655EA8 /* Pods-Simctl.debug.xcconfig */,
+				F7BB409ED049D789126EAEDDB51F853B /* Pods-Simctl.release.xcconfig */,
+			);
+			name = "Pods-Simctl";
+			path = "Target Support Files/Pods-Simctl";
+			sourceTree = "<group>";
+		};
+		4A9378A2E61008086A88067E92B47AFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8521CE792EF9DDD5F59E81F299AF3627 /* BrightFutures.modulemap */,
+				676925B355257DABB05AD6AFDB97CCBF /* BrightFutures.xcconfig */,
+				EF32C3780EEBB1921739A76AE94C85FA /* BrightFutures-dummy.m */,
+				C3652EA5F4E656C75098E40D318CEC6B /* BrightFutures-prefix.pch */,
+				38936F0293CDDE3A1194462C953E9851 /* BrightFutures-umbrella.h */,
+				9D0A0FBE5D727C6FF15A5A32848F50CA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BrightFutures";
+			sourceTree = "<group>";
+		};
+		537E452E328392E194FC97F8C4B4B8F2 /* BrightFutures */ = {
+			isa = PBXGroup;
+			children = (
+				6CCB996F83D8DA2BE049E6829021C00C /* Async.swift */,
+				74E1B9B96AF4248E90A6A8DAC771A628 /* AsyncType.swift */,
+				715BC8AAF1B7B4BF727ECA506374188D /* AsyncType+ResultType.swift */,
+				95903EAC04BC503EB22B7EF8772D506E /* Errors.swift */,
+				C19B7154A82D0EC48E36BA26F1BD2E7E /* ExecutionContext.swift */,
+				19B532100E9FE15C91AA2A034C095618 /* Future.swift */,
+				A4DAFC7C578515B5BC67058B3BE6D636 /* InvalidationToken.swift */,
+				4B914166196C4E7A66AB1B4AF409FB97 /* MutableAsyncType.swift */,
+				2744C88A68046A02914C80C6FE81607A /* MutableAsyncType+ResultType.swift */,
+				9999A68A35EFCE29F7CE6D6405765C1E /* NSOperationQueue+BrightFutures.swift */,
+				1E80350199515E9A6008917D0FEE154A /* Promise.swift */,
+				71B79561C859683BF909518465CBA408 /* Queue.swift */,
+				CA8450BF24B42699DB5E082E3E148570 /* Result+BrightFutures.swift */,
+				7628ADC4ED9ECFC12ABC86ECF3CC2EFE /* Semaphore.swift */,
+				A825220DB9A6E0E8BFF93CB522BC9425 /* SequenceType+BrightFutures.swift */,
+				4A9378A2E61008086A88067E92B47AFF /* Support Files */,
+			);
+			path = BrightFutures;
+			sourceTree = "<group>";
+		};
+		6DA994D9D7EF1B6FF83A16D3FC9B548A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA3F6B094202313FA04A7EC71D62A67 /* BrightFutures.framework */,
+				78F8A3B244D009B464011E42493C6E9C /* GCDWebServer.framework */,
+				75C428FE3F54039A70E6E9396E037005 /* Pods_Simctl.framework */,
+				408E56A17619FC4A9B11BC28230AD8EC /* Result.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A3A292068DD6ECFA3263C56F7975D08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				537E452E328392E194FC97F8C4B4B8F2 /* BrightFutures */,
+				8869FD258F9C06F6A610FB9E56DF0D86 /* GCDWebServer */,
+				90B20F0CC11102839D6192FDE1C87E50 /* Result */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E111DCA59D35ADF695DF0EEDB1507800 /* Frameworks */,
+				7A3A292068DD6ECFA3263C56F7975D08 /* Pods */,
+				6DA994D9D7EF1B6FF83A16D3FC9B548A /* Products */,
+				1CDA4D350C24E4D41D58C2B701393C43 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8869FD258F9C06F6A610FB9E56DF0D86 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				AD873BA549CF07F2CA1FD12A6298B64D /* Core */,
+				A95591744C5E7F6DA4B16D4DC5EADECA /* Support Files */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		90B20F0CC11102839D6192FDE1C87E50 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6C5C3186E718E53FE879054D0A40E /* Result.swift */,
+				52D3FCB086AB81D9680D67F4CC98BF25 /* ResultType.swift */,
+				B12FFF3099F3B83F7D63D66BBA2C8268 /* Support Files */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		A95591744C5E7F6DA4B16D4DC5EADECA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20DC436BD7F66B61F3ED3B695F8ACB94 /* GCDWebServer.modulemap */,
+				377FBB44716D2BBBED0E9020DF8CC25A /* GCDWebServer.xcconfig */,
+				4B2DD184E7E54064D3BCFB92B63D878E /* GCDWebServer-dummy.m */,
+				24F5C53D93ECF5F8CD4A748B99B7DF22 /* GCDWebServer-prefix.pch */,
+				B62C31D68A82ECB446C9EB0DE9C904E9 /* GCDWebServer-umbrella.h */,
+				C8611B3921BD1884A34CA2C2FB7B170E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCDWebServer";
+			sourceTree = "<group>";
+		};
+		AD873BA549CF07F2CA1FD12A6298B64D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1595A01F9DF1905DCDFF7F6E9E361 /* GCDWebServer.h */,
+				FDCE6F89ACFE6B1E04CC32D286EF89D1 /* GCDWebServer.m */,
+				3F0788BB22ED61EB02A6C3A0A6379B55 /* GCDWebServerConnection.h */,
+				9B6F26A28BAD35AEC153117E58D838A7 /* GCDWebServerConnection.m */,
+				91842E09696A216FDD1F778179C22DAD /* GCDWebServerDataRequest.h */,
+				2D4C6C7D1E3C155A4E9BD607CE515D08 /* GCDWebServerDataRequest.m */,
+				7A9724EC6585F52B1FE4C7DCD852A1E0 /* GCDWebServerDataResponse.h */,
+				A707BC3ADFF64D75A8C577D956F0B364 /* GCDWebServerDataResponse.m */,
+				FDD7D3424CEAE1A886D6D356ED69B8D7 /* GCDWebServerErrorResponse.h */,
+				296B3690F8E310BB3DCB5AEE5BF29203 /* GCDWebServerErrorResponse.m */,
+				E63DCA26C562543E7CBA2D48AE53E27B /* GCDWebServerFileRequest.h */,
+				2539DDAF179ABD5C0D5482124FD8699C /* GCDWebServerFileRequest.m */,
+				C79358E0A6ED493C8D67D1FEF5E8F404 /* GCDWebServerFileResponse.h */,
+				03936C18469F974EB36B7F1F72B6BF2B /* GCDWebServerFileResponse.m */,
+				88E69FE9368F4C59AA6DE61A9539137A /* GCDWebServerFunctions.h */,
+				7A3E7DE43FD3B48C5BB38E6E10FD2D73 /* GCDWebServerFunctions.m */,
+				8FE8F17DA1EA2BCF7E819B147096377B /* GCDWebServerHTTPStatusCodes.h */,
+				EA625AFAEB32E55216B89202CF53B838 /* GCDWebServerMultiPartFormRequest.h */,
+				0033015A305B07F333332EA327CF8905 /* GCDWebServerMultiPartFormRequest.m */,
+				FA6FB18EA2FDA656F62865992BE8B875 /* GCDWebServerPrivate.h */,
+				8E8EA8A51C5F9DD8DD62AFD9E3D78DBB /* GCDWebServerRequest.h */,
+				6F8F2C83F2D0BD2079424D75C33B81FD /* GCDWebServerRequest.m */,
+				AB3611696419413437CF0229593BD4FB /* GCDWebServerResponse.h */,
+				C5619B6AD211D3518918DFD03D067C73 /* GCDWebServerResponse.m */,
+				336C34AEED7C74E906462EC3C48CF8B2 /* GCDWebServerStreamedResponse.h */,
+				E19E8EC19F83C540C4A209F0421F4C37 /* GCDWebServerStreamedResponse.m */,
+				C9BB1257273C062CDF545445A9D32F69 /* GCDWebServerURLEncodedFormRequest.h */,
+				257977CCD7A377286ACCAEB7AEB9C935 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B12FFF3099F3B83F7D63D66BBA2C8268 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C00BB534FD0CCD99BD26C1ACF87E38BB /* Info.plist */,
+				36E53F77887EFD7EC2DCC01E3E7CB4B9 /* Result.modulemap */,
+				7C412609DAE6126917B43896E7E8BFD4 /* Result.xcconfig */,
+				A0A0F8A5F4EA16664406228F835F4F7B /* Result-dummy.m */,
+				433776FD202EACE17385EFC8CFEFDBFF /* Result-prefix.pch */,
+				E441A7CAC9D8F4C53B1E1A22942FC298 /* Result-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Result";
+			sourceTree = "<group>";
+		};
+		E111DCA59D35ADF695DF0EEDB1507800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800EAF32A5E6E64B4B0819BCAC447CB5 /* Result.framework */,
+				217C4DFC14A0A7EE5FEFD89A38C30F61 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5EAEDF4B6B1ACE8D1A58411AAEC1B90F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887256D19D5281690483F032CFC2114E /* Pods-Simctl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C002EAF21ECFE647A36BDE37A6C043DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB26C90146FEFF44BA116B1E35E09F4 /* Result-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D627DF1DFABAE2ECABAB866D7B3AFCA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09ECD41EED1BC892EE6FEFCEDB5E8947 /* BrightFutures-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9BF5E3F1B461B3BD89FA515D5D28535 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40F70E70A1D2FAEBFEFE14958C47FBE /* GCDWebServer-umbrella.h in Headers */,
+				749BEB3F21EAFA6D78F5631312D2C7E6 /* GCDWebServer.h in Headers */,
+				5FAE6F4952486D7B0087309AA2F25DB0 /* GCDWebServerConnection.h in Headers */,
+				6B25647E430E216994070188D9E2CFF8 /* GCDWebServerDataRequest.h in Headers */,
+				AA5A24F29D4D8831ED55AB74A2F17A71 /* GCDWebServerDataResponse.h in Headers */,
+				06CE205FB95B45D7ED260AFD00AC79DD /* GCDWebServerErrorResponse.h in Headers */,
+				7D747500B9BEC95D4FA0FEA5BFA6D4D4 /* GCDWebServerFileRequest.h in Headers */,
+				1DBE01B20E03413F5811A7E58EB649BD /* GCDWebServerFileResponse.h in Headers */,
+				34FDA8A310469061BC207ED84D065BBC /* GCDWebServerFunctions.h in Headers */,
+				6D2CA7708E200C89F0DAD24F88680D46 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				00C1D4F2B49242121D01C05655377D07 /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				DE37CE3D218BBE39543E834E7BFA857C /* GCDWebServerPrivate.h in Headers */,
+				44D5C1A62CB2C6B4C3BC022D80F843D1 /* GCDWebServerRequest.h in Headers */,
+				1BF86805992CFF0188743FC58574A612 /* GCDWebServerResponse.h in Headers */,
+				8A400F495FB328F47971CEFD020BE9CB /* GCDWebServerStreamedResponse.h in Headers */,
+				743CC8268943E23DB0EADC8614FEE9BA /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D5F330DB8F9AC7087AFF29D18015445 /* Pods-Simctl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ABF4A1D75011F4909A9E8C7E458CACA /* Build configuration list for PBXNativeTarget "Pods-Simctl" */;
+			buildPhases = (
+				05D1571B5B0582C7E005EEAF6C0EA4A7 /* Sources */,
+				7D9DEF5766731BD8292327233B909188 /* Frameworks */,
+				5EAEDF4B6B1ACE8D1A58411AAEC1B90F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C80499AE1986D3F150F18BB51BA03EBF /* PBXTargetDependency */,
+				1B9B9BB02FB882CF5DF8AAFB180927E2 /* PBXTargetDependency */,
+				BD345276D219EA3BBBCB445AAD10C552 /* PBXTargetDependency */,
+			);
+			name = "Pods-Simctl";
+			productName = "Pods-Simctl";
+			productReference = 75C428FE3F54039A70E6E9396E037005 /* Pods_Simctl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BB17359068A26BB1EF61653A3E7C9A3 /* BrightFutures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6278D9255C686C25D63CF294A3EFA5CF /* Build configuration list for PBXNativeTarget "BrightFutures" */;
+			buildPhases = (
+				B472D60104F5D5C3CB0C495535B095A1 /* Sources */,
+				77A24008BA4EDBB3B370C67666ED5F4F /* Frameworks */,
+				D627DF1DFABAE2ECABAB866D7B3AFCA6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B00B1C772E84BD01CA84C11F876DB01 /* PBXTargetDependency */,
+			);
+			name = BrightFutures;
+			productName = BrightFutures;
+			productReference = FDA3F6B094202313FA04A7EC71D62A67 /* BrightFutures.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DADB076AFECDBAADF5E2B19FB72188A /* GCDWebServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16ED0890B237DF1B16DA47D0E14DB4DD /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildPhases = (
+				5761E9EE01E570A31C13FCC75B0E3EB0 /* Sources */,
+				B301BDF47623A07531A7025565B54DC5 /* Frameworks */,
+				D9BF5E3F1B461B3BD89FA515D5D28535 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDWebServer;
+			productName = GCDWebServer;
+			productReference = 78F8A3B244D009B464011E42493C6E9C /* GCDWebServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCB45C0AF8651B0CC72E303D3F242439 /* Result */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EDDC242E93854C4E27EBE4C2B613262 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildPhases = (
+				E037EE11F4DBA0E40BA6D51733249D99 /* Sources */,
+				9B614B36AC1D690BDF5700B38F009E68 /* Frameworks */,
+				C002EAF21ECFE647A36BDE37A6C043DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Result;
+			productName = Result;
+			productReference = 408E56A17619FC4A9B11BC28230AD8EC /* Result.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6DA994D9D7EF1B6FF83A16D3FC9B548A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BB17359068A26BB1EF61653A3E7C9A3 /* BrightFutures */,
+				8DADB076AFECDBAADF5E2B19FB72188A /* GCDWebServer */,
+				6D5F330DB8F9AC7087AFF29D18015445 /* Pods-Simctl */,
+				DCB45C0AF8651B0CC72E303D3F242439 /* Result */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05D1571B5B0582C7E005EEAF6C0EA4A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786354D184BE923C5D0B7E15DA4BB650 /* Pods-Simctl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5761E9EE01E570A31C13FCC75B0E3EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2659AF88A6232000AB5213D46D90BF57 /* GCDWebServer-dummy.m in Sources */,
+				F06A7AC16F49B8271D54543DB8F29199 /* GCDWebServer.m in Sources */,
+				59B57964B1FD13F37637947C46E77EA0 /* GCDWebServerConnection.m in Sources */,
+				B117FB3C5DADAA39C6FE0B2E2E0FD8F8 /* GCDWebServerDataRequest.m in Sources */,
+				2FD4F69F155869816E3568D2C0A328CD /* GCDWebServerDataResponse.m in Sources */,
+				8316EC11EB8EF857FC8AC924FF540076 /* GCDWebServerErrorResponse.m in Sources */,
+				A7AF534B31209659ED4C123BC4D32A31 /* GCDWebServerFileRequest.m in Sources */,
+				1B72926422971A05A1038FEF1F10DA23 /* GCDWebServerFileResponse.m in Sources */,
+				64EFFC6E05B9CACD03418CEF01429883 /* GCDWebServerFunctions.m in Sources */,
+				AFC0F5A350E42EDD292F2B499C13FBFD /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				4718BD505162FA674C844F282A692E90 /* GCDWebServerRequest.m in Sources */,
+				946AF936A5472D7D7EF243D3399A2D44 /* GCDWebServerResponse.m in Sources */,
+				976C070668BB589ABDB7498633967223 /* GCDWebServerStreamedResponse.m in Sources */,
+				936C4E5402529DF91047CB9B84C5C281 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B472D60104F5D5C3CB0C495535B095A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A014155DCD78356F0E7E62B7A179E8 /* Async.swift in Sources */,
+				471A38FC9AF9649E31CDC0341A7AF8B0 /* AsyncType+ResultType.swift in Sources */,
+				68B64C52F85E1A0B8AC5410FDDE03D07 /* AsyncType.swift in Sources */,
+				617E0A611B03C36C1DDFE620C0BAE39D /* BrightFutures-dummy.m in Sources */,
+				3E3645D4D611E9A212D9A21952F550EB /* Errors.swift in Sources */,
+				B945A34C95CBC41678D0B37EE95493B7 /* ExecutionContext.swift in Sources */,
+				6365EB94D63E3B73EC7FC13FFC2FC877 /* Future.swift in Sources */,
+				5F5938C6438438D40DB044F697835A4E /* InvalidationToken.swift in Sources */,
+				8071ECD543975CC1517AAC58B260D53F /* MutableAsyncType+ResultType.swift in Sources */,
+				AF092F81C6F44FA8F065CF43D112A741 /* MutableAsyncType.swift in Sources */,
+				AAE29103F95967AFEAFAAD5CB8D5F1CC /* NSOperationQueue+BrightFutures.swift in Sources */,
+				661C5DD01E4441673B992342E098D47C /* Promise.swift in Sources */,
+				E200ED03F550223C9F6FFC17ED1EEC57 /* Queue.swift in Sources */,
+				23CC8C8F78A473355FFF1A3CBD017864 /* Result+BrightFutures.swift in Sources */,
+				80F843BA9002D7ACB25D605A5F5A5655 /* Semaphore.swift in Sources */,
+				E8E4C5EBCD831C8E5D0D0CA305F08CC8 /* SequenceType+BrightFutures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E037EE11F4DBA0E40BA6D51733249D99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1780833527F5CAD846203B80B2190C /* Result-dummy.m in Sources */,
+				E144557C782A57E2EC23FD35FB52121C /* Result.swift in Sources */,
+				D2EB767179E57B557901172CF4984C24 /* ResultType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B9B9BB02FB882CF5DF8AAFB180927E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = 8DADB076AFECDBAADF5E2B19FB72188A /* GCDWebServer */;
+			targetProxy = B087D6091F43AB948ED37FC00DA877B0 /* PBXContainerItemProxy */;
+		};
+		3B00B1C772E84BD01CA84C11F876DB01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = DCB45C0AF8651B0CC72E303D3F242439 /* Result */;
+			targetProxy = 3B71FB608C77A5E63BAF54F546F4AC2D /* PBXContainerItemProxy */;
+		};
+		BD345276D219EA3BBBCB445AAD10C552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = DCB45C0AF8651B0CC72E303D3F242439 /* Result */;
+			targetProxy = 4D69E9A2BF4D03EC1A81C9C8688E7D75 /* PBXContainerItemProxy */;
+		};
+		C80499AE1986D3F150F18BB51BA03EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = 7BB17359068A26BB1EF61653A3E7C9A3 /* BrightFutures */;
+			targetProxy = 4406136E37B90F3A12CDD4DEB8FA3DDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0AB54AC2A660E69BACCD19B7E732B19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C412609DAE6126917B43896E7E8BFD4 /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Result;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6027390DCEF8A29E8D6F5B10421E0C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676925B355257DABB05AD6AFDB97CCBF /* BrightFutures.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BrightFutures/BrightFutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrightFutures/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/BrightFutures/BrightFutures.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BrightFutures;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D596A1D5534512E841C054E28DA38C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BB409ED049D789126EAEDDB51F853B /* Pods-Simctl.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Simctl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-Simctl/Pods-Simctl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Simctl;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DB3D694DA32E8E9E8369AB3A701BFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155A8F69C3704B8A6F14861A79655EA8 /* Pods-Simctl.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Simctl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-Simctl/Pods-Simctl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Simctl;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94D9BC00EEB34DA6CE7149B77BCFB946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377FBB44716D2BBBED0E9020DF8CC25A /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B688665FDF44A7A81FB65791A544010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377FBB44716D2BBBED0E9020DF8CC25A /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E228675A839757607A3D655672816963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C412609DAE6126917B43896E7E8BFD4 /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Result;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDB643DCEC71F4F602F7ACE33E13F003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676925B355257DABB05AD6AFDB97CCBF /* BrightFutures.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BrightFutures/BrightFutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrightFutures/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/BrightFutures/BrightFutures.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BrightFutures;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16ED0890B237DF1B16DA47D0E14DB4DD /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D9BC00EEB34DA6CE7149B77BCFB946 /* Debug */,
+				9B688665FDF44A7A81FB65791A544010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
+				578820E498FFD85CA5D93A33D365FBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6278D9255C686C25D63CF294A3EFA5CF /* Build configuration list for PBXNativeTarget "BrightFutures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6027390DCEF8A29E8D6F5B10421E0C91 /* Debug */,
+				EDB643DCEC71F4F602F7ACE33E13F003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ABF4A1D75011F4909A9E8C7E458CACA /* Build configuration list for PBXNativeTarget "Pods-Simctl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB3D694DA32E8E9E8369AB3A701BFA3 /* Debug */,
+				6D596A1D5534512E841C054E28DA38C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EDDC242E93854C4E27EBE4C2B613262 /* Build configuration list for PBXNativeTarget "Result" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB54AC2A660E69BACCD19B7E732B19C /* Debug */,
+				E228675A839757607A3D655672816963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
