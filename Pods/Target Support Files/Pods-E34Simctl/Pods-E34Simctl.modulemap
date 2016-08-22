@@ -1,0 +1,6 @@
+framework module Pods_E34Simctl {
+  umbrella header "Pods-E34Simctl-umbrella.h"
+
+  export *
+  module * { export * }
+}

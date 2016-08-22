@@ -33,7 +33,7 @@ class SimulatorController {
         let allocationOptions = FBSimulatorAllocationOptions.Create
         if let simulator = try self.control?.pool.allocateSimulatorWithConfiguration(config, options: allocationOptions) {
             let task = NSTask()
-            task.launchPath = "fbsimctl"
+            task.launchPath = NSBundle.mainBundle().pathForResource("fbsimctl", ofType:  "")!
             task.arguments = [simulator.udid, "boot"]
             task.launch()
             task.waitUntilExit()
@@ -51,8 +51,8 @@ class SimulatorController {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)) {
             let task = NSTask()
-            task.launchPath = "fbsimctl"
-            task.arguments = [simulatorUdid, "launch_xctest", "--test-timeout", "900.0", "/Users/silvia/Library/Developer/Xcode/DerivedData/build/Products/Debug-iphonesimulator/WebDriverAgentRunner-Runner.app/PlugIns/WebDriverAgentRunner.xctest", "com.apple.mobilesafari", "--port" , port, "--listen"]
+            task.launchPath = NSBundle.mainBundle().pathForResource("fbsimctl", ofType:  "")!
+            task.arguments = [simulatorUdid, "launch_xctest", "--test-timeout", "900.0", "\(NSBundle.mainBundle().pathForResource("WebDriverAgentRunner-Runner", ofType: "app")!)/PlugIns/WebDriverAgentRunner.xctest", "com.apple.mobilesafari", "--port" , port, "--listen"]
             task.launch() //never going to finish
         }
     }
@@ -90,7 +90,7 @@ class SimulatorController {
             let host = "http://localhost:\(self.ports[simulatorUdid]!)"
             let sessionUrl = "\(host)/session"
             let inspectorUrl = "\(host)/inspector"
-            let appPath = "/Users/silvia/Development/workspace/e34/TableSearch.app"
+            let appPath = NSBundle.mainBundle().pathForResource("TableSearch", ofType: "app")!
             let parameters = [
                 "desiredCapabilities": [
                     "bundleId": "com.example.apple-samplecode.TableSearch",
@@ -119,6 +119,7 @@ class SimulatorController {
     }
     
     func killAllSimulators() throws {
+        //todo does not actually work
         try self.control?.set.killAll()
     }
     

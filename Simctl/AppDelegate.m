@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "Simctl-Swift.h"
-#import "Simctl-Bridging-Header.h"
+#import "E34Simctl-Swift.h"
+#import "E34Simctl-Bridging-Header.h"
 
 @interface AppDelegate () {
     WebServer *webserver;
